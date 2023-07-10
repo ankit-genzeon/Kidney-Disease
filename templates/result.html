@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/result.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">PREDICTION RESULT</h1>
+        <div class="result-section">
+            <div class="data-section">
+                <h2>Your Data</h2>
+                <div class="feature-values">
+                    {% for feature, value in feature_values.items() %}
+                    <div class="feature">
+                        <strong>{{ feature }}:</strong> {{ value }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="prediction-section">
+            {% if prediction == 1.0 %}
+            <p>The patient has chronic kidney disease.</p>
+            {% else %}
+            <p>The patient does not have chronic kidney disease.</p>
+            {% endif %}
+            <form method="POST" action="/download">
+                <input type="hidden" name="prediction" value="{{ prediction }}">
+                <button type="submit" class="btn btn-primary btn-block">Download Report</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

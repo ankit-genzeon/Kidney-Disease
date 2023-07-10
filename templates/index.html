@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload PDF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">UPLOAD YOUR HEALTH REPORT</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="pdfFile">Select PDF File:</label>
+                <input type="file" class="form-control-file" id="pdfFile" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary btn-upload">UPLOAD</button>
+        </form>
+    </div>
+</body>
+</html>

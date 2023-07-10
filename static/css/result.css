@@ -1,0 +1,39 @@
+body {
+    background-image: url('../images/wengang-zhai-BFB7ydn1-DI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+.container {
+    max-width: 800px;   
+    background-color: #ffffff69;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.result-section {
+    margin-bottom: 40px;
+}
+.feature-table {
+    margin-bottom: 20px;
+}
+.feature-values {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-values .feature {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+}
+.prediction-section {
+    margin-top: 30px;
+    text-align: center;
+}
+.data-section {
+    background-color: #f8f9fa69;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}

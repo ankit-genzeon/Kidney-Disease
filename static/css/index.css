@@ -1,0 +1,33 @@
+body {
+    background-image: url('../images/wengang-zhai-BFB7ydn1-DI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 500px;   
+    margin-top: 100px;
+    background-color: #ffffff69;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn-upload {
+    width: 50%;
+    background-color: #0b7a01; /* Replace with your desired color */
+    color: #FFFFFF; /* Replace with desired text color */
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.btn-upload:hover {
+    background-color: #003e0d; /* Replace with desired hover color */
+}
